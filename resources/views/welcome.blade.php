@@ -4,22 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>VBC</title>
 
     {{-- <!-- Fonts --> --}}
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
     {{-- <!-- Styles --> --}}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
     crossorigin="anonymous">
     {{-- google font --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
     {{-- fonteawsom --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
-    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
@@ -49,7 +49,7 @@
                             <a class="btn btn-success" href="{{ url('/cards') }}" class="">Home</a>
                         @else
                             <a class="btn " style="background-color: #432c7e; color: white;" href="{{ route('login') }}" class="">Log in</a>
-    
+
                             @if (Route::has('register'))
                                 <a class="btn btn-secondary" href="{{ route('register') }}" class="">Register</a>
                             @endif
@@ -58,7 +58,7 @@
                     @endif
                 </div>
             </div>
-            
+
         </div>
     </nav>
 
@@ -68,7 +68,7 @@
             <div class="col-md-6 p-5">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 style="font-family: 'Roboto', sans-serif;">First digital business card in Algeria</h1>                        
+                        <h1 style="font-family: 'Roboto', sans-serif;">First digital business card in Algeria</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -79,15 +79,15 @@
                 <div class="row">
                     <div class="col-md-6">
                         <a href="#"><img class="img-fluid" src="{{asset('assets/img/app_store.png')}}" alt="app_store" srcset=""></a>
-                        
+
                     </div>
                     <div class="col-md-6">
-                        <a href="#"><img class="img-fluid" src="{{asset('assets/img/google_play_badge.png')}}" alt="google_play_badge" srcset=""></a> 
+                        <a href="#"><img class="img-fluid" src="{{asset('assets/img/google_play_badge.png')}}" alt="google_play_badge" srcset=""></a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <img class="img-fluid" src="{{asset('assets/img/hero.png')}}" alt="hero" srcset="">                
+                <img class="img-fluid" src="{{asset('assets/img/hero.png')}}" alt="hero" srcset="">
             </div>
         </div>
     </div>
@@ -137,7 +137,7 @@
             <span>Get connected with us on social networks:</span>
         </div>
         <!-- Left -->
-    
+
         <!-- Right -->
         <div>
             <a href="" class="me-4 link-grayish">
@@ -162,7 +162,7 @@
         <!-- Right -->
         </section>
         <!-- Section: Social media -->
-    
+
         <!-- Section: Links  -->
         <section class="">
         <div class="container text-center text-md-start mt-5">
@@ -180,7 +180,7 @@
                 </p>
             </div>
             <!-- Grid column -->
-    
+
             <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
@@ -201,7 +201,7 @@
                 </p>
             </div>
             <!-- Grid column -->
-    
+
             <!-- Grid column -->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
@@ -222,7 +222,7 @@
                 </p>
             </div>
             <!-- Grid column -->
-    
+
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
@@ -241,7 +241,7 @@
         </div>
         </section>
         <!-- Section: Links  -->
-    
+
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
         © 2022 Copyright:
@@ -255,8 +255,8 @@
 
 
     {{-- bootstrap 5 js --}}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 </body>
 </html>

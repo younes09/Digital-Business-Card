@@ -16,21 +16,21 @@
 					<div class="main-header-right">
 
 						<div class="nav nav-item  navbar-nav-right ml-auto">
-							<div class="nav-link" id="bs-example-navbar-collapse-1">
-								<form class="navbar-form" role="search">
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="Search">
-										<span class="input-group-btn">
-											<button type="reset" class="btn btn-default">
-												<i class="fas fa-times"></i>
-											</button>
-											<button type="submit" class="btn btn-default nav-link resp-btn">
-												<svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-											</button>
-										</span>
-									</div>
-								</form>
-							</div>
+{{--							<div class="nav-link" id="bs-example-navbar-collapse-1">--}}
+{{--								<form class="navbar-form" role="search">--}}
+{{--									<div class="input-group">--}}
+{{--										<input type="text" class="form-control" placeholder="Search">--}}
+{{--										<span class="input-group-btn">--}}
+{{--											<button type="reset" class="btn btn-default">--}}
+{{--												<i class="fas fa-times"></i>--}}
+{{--											</button>--}}
+{{--											<button type="submit" class="btn btn-default nav-link resp-btn">--}}
+{{--												<svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>--}}
+{{--											</button>--}}
+{{--										</span>--}}
+{{--									</div>--}}
+{{--								</form>--}}
+{{--							</div>--}}
 							<div class="dropdown nav-item main-header-notification">
 								<a class="new nav-link" onclick="return alert('Comming soon for primum user only !')" href="#">
 									<svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span class=" pulse"></span>
@@ -142,9 +142,9 @@
 									<a class="dropdown-item" href=""><i class="bx bxs-inbox"></i>Inbox</a>
 									<a class="dropdown-item" href=""><i class="bx bx-envelope"></i>Messages</a>
 									<a class="dropdown-item" href=""><i class="bx bx-slider-alt"></i> Account Settings</a> --}}
-									<a class="dropdown-item" href="{{ url('/updatePasswordView') }}"><i class="bx bx-edit"></i>Update Password</a>{{-- TODO: add edit profile here --}}	
-									<a class="dropdown-item" onclick="return confirm('Are you sure to delet your acount ?')" href="{{ url('deletUser'.auth()->user()->id) }}"><i class="bx bx-trash"></i>Delet my acount</a>{{-- TODO: Add delet acount here ( when delet acount delet all picturs too )--}}	
-									<a class="dropdown-item" href="{{ route('logout') }}"><i class="bx bx-log-out"></i> Sign Out</a>								
+									<a class="dropdown-item" href="{{ url('/updatePasswordView') }}"><i class="bx bx-edit"></i>Update Password</a>{{-- TODO: add edit profile here --}}
+									<a class="dropdown-item" onclick="return confirm('Are you sure to delet your acount ?')" href="{{ url('deletUser'.auth()->user()->id) }}"><i class="bx bx-trash"></i>Delet my acount</a>{{-- TODO: Add delet acount here ( when delet acount delet all picturs too )--}}
+									<a class="dropdown-item" href="{{ route('logout') }}"><i class="bx bx-log-out"></i> Sign Out</a>
 								</div>
 							</div>
 						</div>
