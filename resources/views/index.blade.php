@@ -44,7 +44,7 @@
 					<!-- row -->
                     @if($errors->any())
                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                            <strong>Holy guacamole!</strong> Your a Free User you can use only (1) Card.
+                            <strong>Holy guacamole!</strong> Your a Free User you can use create (1) Card.
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
