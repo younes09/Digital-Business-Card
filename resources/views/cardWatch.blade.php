@@ -296,7 +296,7 @@
                                 $test = "47";
                             @endphp
                         <div id="fullsized_image_holder">
-                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://10.0.1.200/My-Github/Digital-Business-Card/public/cardWatch{{$customer_data[0]->id}}" alt="qr-code" download>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data={{url('')}}/cardWatch{{$customer_data[0]->id}}" alt="qr-code" download>
                         </div>
 
                         <p>My Qr Code</p>

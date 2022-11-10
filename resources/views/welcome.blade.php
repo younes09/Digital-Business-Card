@@ -68,7 +68,7 @@
             <div class="col-md-6 p-5">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 style="font-family: 'Roboto', sans-serif;">First digital business card in Algeria</h1>
+                        <h1 style="font-family: 'Roboto', sans-serif;">Digital business card</h1>
                     </div>
                 </div>
                 <div class="row">

@@ -235,7 +235,7 @@ class CardController extends Controller
 
         if ($logoFile) {
             $newFile = $request->file('logo');
-            $logoName = $newFile->store('images');
+            $logoName = $newFile->store('users','myimg');
             $photoUser = CustomerInfo::where('id', $request->id)->value('logo'); // get user photo path to delet it
             if($photoUser != null) unlink('images/'.$photoUser); // delet the user logo
         }
