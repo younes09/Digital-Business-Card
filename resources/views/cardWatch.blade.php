@@ -141,7 +141,7 @@
                             <i class="fa-brands fa-facebook fa-1x rounded-circle p-3" aria-hidden="true" style="background-color: #4a4a4a ; color:white;"></i>
                         </div>
                         <div class="col">
-                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">{{$customer_data[0]->facbook}}</p>
+                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">Facbook</p>
                         </div>
                     </div>
                 </a>
@@ -153,7 +153,7 @@
                             <i class="fa-brands fa-instagram fa-1x rounded-circle p-3" aria-hidden="true" style="background-color: #4a4a4a ; color:white;"></i>
                         </div>
                         <div class="col">
-                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">{{$customer_data[0]->instagram}}</p>
+                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">Instagram</p>
                         </div>
                     </div>
                 </a>
@@ -165,7 +165,7 @@
                             <i class="fa-brands fa-linkedin fa-1x rounded-circle p-3" aria-hidden="true" style="background-color: #4a4a4a ; color:white;"></i>
                         </div>
                         <div class="col">
-                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">{{$customer_data[0]->linkedin}}</p>
+                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">Linkedin</p>
                         </div>
                     </div>
                 </a>
@@ -177,7 +177,7 @@
                             <i class="fa-brands fa-youtube fa-1x rounded-circle p-3" aria-hidden="true" style="background-color: #4a4a4a ; color:white;"></i>
                         </div>
                         <div class="col">
-                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">{{$customer_data[0]->youtube}}</p>
+                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">Youtube</p>
                         </div>
                     </div>
                 </a>
@@ -189,7 +189,7 @@
                             <i class="fa-brands fa-tiktok fa-1x rounded-circle p-3" aria-hidden="true" style="background-color: #4a4a4a ; color:white;"></i>
                         </div>
                         <div class="col">
-                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">{{$customer_data[0]->tiktok}}</p>
+                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">Tiktok</p>
                         </div>
                     </div>
                 </a>
@@ -201,7 +201,7 @@
                             <i class="fa-brands fa-twitter fa-1x rounded-circle p-3" aria-hidden="true" style="background-color: #4a4a4a ; color:white;"></i>
                         </div>
                         <div class="col">
-                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">{{$customer_data[0]->twitter}}</p>
+                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">Twitter</p>
                         </div>
                     </div>
                 </a>
@@ -213,7 +213,7 @@
                             <i class="fa-brands fa-line fa-1x rounded-circle p-3" aria-hidden="true" style="background-color: #4a4a4a ; color:white;"></i>
                         </div>
                         <div class="col">
-                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">{{$customer_data[0]->line}}</p>
+                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">Line</p>
                         </div>
                     </div>
                 </a>
@@ -225,7 +225,7 @@
                             <i class="fa-brands fa-pinterest fa-1x rounded-circle p-3" aria-hidden="true" style="background-color: #4a4a4a ; color:white;"></i>
                         </div>
                         <div class="col">
-                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">{{$customer_data[0]->pinterest}}</p>
+                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">Pinterest</p>
                         </div>
                     </div>
                 </a>
@@ -237,7 +237,7 @@
                             <i class="fa-brands fa-renren fa-1x rounded-circle p-3" aria-hidden="true" style="background-color: #4a4a4a ; color:white;"></i>
                         </div>
                         <div class="col">
-                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">{{$customer_data[0]->renren}}</p>
+                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">Renren</p>
                         </div>
                     </div>
                 </a>
@@ -249,7 +249,7 @@
                             <i class="fa-brands fa-tencent-weibo fa-1x rounded-circle p-3" aria-hidden="true" style="background-color: #4a4a4a ; color:white;"></i>
                         </div>
                         <div class="col">
-                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">{{$customer_data[0]->vk}}</p>
+                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">VK</p>
                         </div>
                     </div>
                 </a>
@@ -261,7 +261,7 @@
                             <i class="fa-brands fa-vk fa-1x rounded-circle p-3" aria-hidden="true" style="background-color: #4a4a4a ; color:white;"></i>
                         </div>
                         <div class="col">
-                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">{{$customer_data[0]->wechat}}</p>
+                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">Wechat</p>
                         </div>
                     </div>
                 </a>
@@ -273,7 +273,7 @@
                             <i class="fa-brands fa-weixin fa-1x rounded-circle p-3" aria-hidden="true" style="background-color: #4a4a4a ; color:white;"></i>
                         </div>
                         <div class="col">
-                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">{{$customer_data[0]->weibo}}</p>
+                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">Weibo</p>
                         </div>
                     </div>
                 </a>
@@ -285,7 +285,7 @@
                             <i class="fa-brands fa-weibo fa-1x rounded-circle p-3" aria-hidden="true" style="background-color: #4a4a4a ; color:white;"></i>
                         </div>
                         <div class="col">
-                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">{{$customer_data[0]->tencent_weibo}}</p>
+                            <p class="align-middle text-break" style="font-size: 1rem;margin: 12px 0px;">Tencent Weibo</p>
                         </div>
                     </div>
                 </a>
