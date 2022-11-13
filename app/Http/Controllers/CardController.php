@@ -409,8 +409,8 @@ class CardController extends Controller
         // delet all user card with uploaded image & logo
         $userCard = CustomerInfo::where('id_comstme_login', $u_id)->get();
         foreach ($userCard as $value) {
-            if($value->photo != null) Storage::delete($value->photo); // delet the user photo
-            if($value->logo != null) Storage::delete($value->logo); // delet the user logo
+            if($value->photo != null) unlink('images/'.$value->photo); // delet the user photo
+            if($value->logo != null) unlink('images/'.$value->logo); // delet the user logo
         }
 
         //delet the user row record

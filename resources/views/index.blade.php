@@ -73,7 +73,7 @@
 								<div class="col" data-toggle="tooltip" data-placement="top" title="Delet">
 									<a onclick="return confirm('Are you sure to delet ( {{$item->name}} ) ?')" href="{{ url('/deletCard'.$item->id) }}" class="" style="color: #dc3545;"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></a>
 								</div>
-								<div class="col" data-toggle="tooltip" data-placement="top" title="View">
+{{--								<div class="col" data-toggle="tooltip" data-placement="top" title="View">--}}
 									<a href="{{ url('/cardWatch'.$item->id) }}" class="" style="color: #007bff"><i class="fa fa-eye fa-2x" aria-hidden="true"></i></a>
 								</div>
 							  </div>
