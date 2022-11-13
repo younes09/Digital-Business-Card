@@ -6,7 +6,12 @@
 				<div class="breadcrumb-header justify-content-between">
 					<div class="my-auto">
 						<div class="d-flex">
-							<h4 class="content-title mb-0 my-auto">Pages</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/ Cards</span>
+                            @if(session()->get('lang') == "eng")
+                                <h4 class="content-title mb-0 my-auto">Pages</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/ Cards</span>
+                            @else
+                                <h4 class="content-title mb-0 my-auto">صفحات</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/ بطاقات</span>
+                            @endif
+
 						</div>
 					</div>
 					<div class="d-flex my-xl-auto right-content">
@@ -44,7 +49,12 @@
 					<!-- row -->
                     @if($errors->any())
                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                            <strong>Holy guacamole!</strong> Your a Free User you can use create (1) Card.
+                            @if(session()->get('lang') == "eng")
+                                <strong>Holy guacamole!</strong> Your a Free User you can use create (1) Card.
+                            @else
+                                <strong>مستخدم مجاني يمكنك استخدام إنشاء بطاقة (1).</strong>
+                            @endif
+
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -57,7 +67,12 @@
 									<a href="{{ url('/newCard') }}"><i class="fa fa-plus fa-4x"></i></a>
 								</div>
 								<div class="col-sm-12">
-									Add Card
+                                    @if(session()->get('lang') == "eng")
+                                        Add Card
+                                    @else
+                                        إضافة بطاقة
+                                    @endif
+
 								</div>
 							</div>
 						</div>

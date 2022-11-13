@@ -6,7 +6,12 @@
 				<div class="breadcrumb-header justify-content-between">
 					<div class="my-auto">
 						<div class="d-flex">
-							<h4 class="content-title mb-0 my-auto">Pages</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/ New</span>
+                            @if(session()->get('lang') == "eng")
+                                <h4 class="content-title mb-0 my-auto">Pages</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/ New</span>
+                            @else
+                                <h4 class="content-title mb-0 my-auto">الصفحات</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/ جديد</span>
+                            @endif
+
 						</div>
 					</div>
 					<div class="d-flex my-xl-auto right-content">
@@ -19,20 +24,20 @@
 						<div class="pr-1 mb-3 mb-xl-0">
 							<button type="button" class="btn btn-warning  btn-icon ml-2"><i class="mdi mdi-refresh"></i></button>
 						</div>
-						<div class="mb-3 mb-xl-0">
-							<div class="btn-group dropdown">
-								<button type="button" class="btn btn-primary"> {{date('Y-m-d')}}</button>
-								<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="dropdownMenuDate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="sr-only">Toggle Dropdown</span>
-								</button>
-								<div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuDate" data-x-placement="bottom-end">
-									<a class="dropdown-item" href="#">2015</a>
-									<a class="dropdown-item" href="#">2016</a>
-									<a class="dropdown-item" href="#">2017</a>
-									<a class="dropdown-item" href="#">2018</a>
-								</div>
-							</div>
-						</div>
+{{--						<div class="mb-3 mb-xl-0">--}}
+{{--							<div class="btn-group dropdown">--}}
+{{--								<button type="button" class="btn btn-primary"> {{date('Y-m-d')}}</button>--}}
+{{--								<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="dropdownMenuDate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+{{--								<span class="sr-only">Toggle Dropdown</span>--}}
+{{--								</button>--}}
+{{--								<div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuDate" data-x-placement="bottom-end">--}}
+{{--									<a class="dropdown-item" href="#">2015</a>--}}
+{{--									<a class="dropdown-item" href="#">2016</a>--}}
+{{--									<a class="dropdown-item" href="#">2017</a>--}}
+{{--									<a class="dropdown-item" href="#">2018</a>--}}
+{{--								</div>--}}
+{{--							</div>--}}
+{{--						</div>--}}
 					</div>
 				</div>
 				<!-- breadcrumb -->
@@ -46,37 +51,81 @@
 								<form action="{{route('InsertNewCard')}}" method="post" enctype="multipart/form-data">
 									@csrf
 									{{-- informaion inputs --}}
-									<label for="photo" class="control-label">Photo:</label>
+                                    @if(session()->get('lang') == "eng")
+                                        <label for="photo" class="control-label">Photo:</label>
+                                    @else
+                                        <label for="photo" class="control-label">صورة:</label>
+                                    @endif
 									<input type="file" name="photo" class="form-control">
 
-									<label for="logo" class="control-label">Logo:</label>
+                                    @if(session()->get('lang') == "eng")
+                                        <label for="logo" class="control-label">Logo:</label>
+                                    @else
+                                        <label for="logo" class="control-label">شعار:</label>
+                                    @endif
 									<input type="file" name="logo" class="form-control">
 
-									<label for="name" class="control-label">Name:</label>
+                                    @if(session()->get('lang') == "eng")
+                                        <label for="name" class="control-label">Name:</label>
+                                    @else
+                                        <label for="name" class="control-label">اسم:</label>
+                                    @endif
 									<input type="text" name="name" class="form-control">
 
-									<label for="poste" class="control-label">Poste:</label>
+                                    @if(session()->get('lang') == "eng")
+                                        <label for="poste" class="control-label">Poste:</label>
+                                    @else
+                                        <label for="poste" class="control-label">مهنة:</label>
+                                    @endif
 									<input type="text" name="poste" class="form-control">
 
-									<label for="email" class="control-label">Email:</label>
+                                    @if(session()->get('lang') == "eng")
+                                        <label for="email" class="control-label">Email:</label>
+                                    @else
+                                        <label for="email" class="control-label">البريد الإلكتروني:</label>
+                                    @endif
 									<input type="email" name="email" class="form-control">
 
-									<label for="phone" class="control-label">Phone:</label>
+                                    @if(session()->get('lang') == "eng")
+                                        <label for="phone" class="control-label">Phone:</label>
+                                    @else
+                                        <label for="phone" class="control-label">هاتف:</label>
+                                    @endif
 									<input type="tel" name="phone" class="form-control">
 
-									<label for="fix" class="control-label">Fix:</label>
+                                    @if(session()->get('lang') == "eng")
+                                        <label for="fix" class="control-label">Fix:</label>
+                                    @else
+                                        <label for="fix" class="control-label">هاتف الثابت:</label>
+                                    @endif
 									<input type="tel" name="fix" class="form-control">
 
-									<label for="web" class="control-label">Website:</label>
+                                    @if(session()->get('lang') == "eng")
+                                        <label for="web" class="control-label">Website:</label>
+                                    @else
+                                        <label for="web" class="control-label">موقع الكتروني:</label>
+                                    @endif
 									<input type="text" name="web" class="form-control">
 
-									<label for="address" class="control-label">Address:</label>
+                                    @if(session()->get('lang') == "eng")
+                                        <label for="address" class="control-label">Address:</label>
+                                    @else
+                                        <label for="address" class="control-label">العنوان:</label>
+                                    @endif
 									<input type="text" name="address" class="form-control">
 
-									<label for="description" class="control-label">Description:</label>
+                                    @if(session()->get('lang') == "eng")
+                                        <label for="description" class="control-label">Description:</label>
+                                    @else
+                                        <label for="description" class="control-label">وصف:</label>
+                                    @endif
 									<input type="text" name="description" class="form-control">
 
-									<h3 class="text-center mt-5">Social media</h3>
+                                    @if(session()->get('lang') == "eng")
+                                        <h3 class="text-center mt-5">Social media</h3>
+                                    @else
+                                        <h3 class="text-center mt-5">وسائل التواصل الاجتماعي</h3>
+                                    @endif
 
 									<hr>
 									{{-- social media inputs --}}

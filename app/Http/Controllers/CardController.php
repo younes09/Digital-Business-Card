@@ -19,6 +19,8 @@ class CardController extends Controller
 
     // show the index of digital buisniss card
     public function Mycards(){
+        session(['lang' => 'ar']);
+        //$value = session('key');
         $user_Id = auth()->user()->id;
         $customerData = CustomerInfo::where('id_comstme_login',$user_Id)->get();
 

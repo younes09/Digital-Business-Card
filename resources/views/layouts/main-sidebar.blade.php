@@ -15,7 +15,11 @@
 						</div>
 						<div class="user-info">
 							<h4 class="font-weight-semibold mt-3 mb-0">{{auth()->user()->name}}</h4>
-							<span class="mb-0 text-muted">Free Member</span>
+                            @if(session()->get('lang') == "eng")
+                            @else
+                                <span class="mb-0 text-muted">عضو مجاني</span>
+                            @endif
+
 						</div>
 					</div>
 				</div>
@@ -23,24 +27,45 @@
 					<li class="slide">
 						<a class="side-menu__item" href="{{ url('/cards') }}">
 							<i class="si si-layers fa-2x mr-3" data-bs-toggle="tooltip" title="" data-bs-original-title="si-layers" aria-label="si-layers"></i>
-							<span class="side-menu__label">Cards</span>
-							<span class="badge badge-danger side-badge">New</span>
+                            @if(session()->get('lang') == "eng")
+                                <span class="side-menu__label">Cards</span>
+                                <span class="badge badge-danger side-badge">New</span>
+                            @else
+                                <span class="side-menu__label">البطاقات</span>
+                                <span class="badge badge-danger side-badge">جديد</span>
+                            @endif
+
 						</a>
 					</li>
 					<li class="slide">
 						<a class="side-menu__item" href="{{ url('/contact') }}">
 
 							<i class="si si-people fa-2x mr-3" data-bs-toggle="tooltip" title="" data-bs-original-title="si-people" aria-label="si-people"></i>
-							<span class="side-menu__label">Contacts</span>
-							<span class="badge badge-danger side-badge">New</span>
+                            @if(session()->get('lang') == "eng")
+                                <span class="side-menu__label">Contacts</span>
+                                <span class="badge badge-danger side-badge">New</span>
+                            @else
+                                <span class="side-menu__label">جهات الاتصال</span>
+                                <span class="badge badge-danger side-badge">جديد</span>
+                            @endif
+
 						</a>
 					</li>
 					<li class="slide">
-						<a class="side-menu__item" onclick="return alert('Comming soon for primum user only !')" href="#" >
-							<i class="si si-graph fa-2x mr-3" data-bs-toggle="tooltip" title="" data-bs-original-title="si-people" aria-label="si-people"></i>
-							<span class="side-menu__label">Statistique</span>
-							<span class="badge badge-danger side-badge"><i class="fa fa-lock" aria-hidden="true"></i></span>
-						</a>
+                        @if(session()->get('lang') == "eng")
+                            <a class="side-menu__item" onclick="return alert('Coming soon for premium users only!')" href="#" >
+                                <i class="si si-graph fa-2x mr-3" data-bs-toggle="tooltip" title="" data-bs-original-title="si-people" aria-label="si-people"></i>
+                                <span class="side-menu__label">Statistique</span>
+                                <span class="badge badge-danger side-badge"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                            </a>
+                        @else
+                            <a class="side-menu__item" onclick="return alert('قريبا للمستخدمين المميزين فقط!')" href="#" >
+                                <i class="si si-graph fa-2x mr-3" data-bs-toggle="tooltip" title="" data-bs-original-title="si-people" aria-label="si-people"></i>
+                                <span class="side-menu__label">الإحصاء</span>
+                                <span class="badge badge-danger side-badge"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                            </a>
+                        @endif
+
 					</li>
 				</ul>
 			</div>

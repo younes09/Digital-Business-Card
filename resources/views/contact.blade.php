@@ -6,7 +6,13 @@
 				<div class="breadcrumb-header justify-content-between">
 					<div class="my-auto">
 						<div class="d-flex">
-							<h4 class="content-title mb-0 my-auto">Pages</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/ Contacts</span>
+                            @if(session()->get('lang') == "eng")
+                                <h4 class="content-title mb-0 my-auto">Pages</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/ Contacts</span>
+                            @else
+                                <h4 class="content-title mb-0 my-auto">الصفحات</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/ جهات الاتصال</span>
+                            @endif
+
+
 						</div>
 					</div>
 					<div class="d-flex my-xl-auto right-content">
@@ -43,7 +49,17 @@
 					<div class="row justify-content-center">
 						{{-- test if ther is resoult in cantact table  --}}
 						@if ( count($customer_data) == 0)
-							<h1> you dont have contacts yet !</h1>
+                            @if(session()->get('lang') == "eng")
+                                <h1> you dont have contacts yet !</h1>
+                            @else
+                            @endif
+                                @if(session()->get('lang') == "eng")
+                                    <h1> you dont have contacts yet !</h1>
+                                @else
+                                    <h1> ! ليس لديك اتصالات حتى الآن </h1>
+                                @endif
+
+
 						@else
 							@foreach ($customer_data as $item)
 							<div class="card col-sm-12 col-lg-4 col-xl-2 m-3" style="padding: 0;width: 18rem;">

@@ -38,3 +38,11 @@ Route::get('/deletUser{u_id}', [CardController::class, 'deletUser']);
 Route::get('/updatePasswordView', [CardController::class, 'updatePasswordView']);
 Route::post('/update-password', [CardController::class, 'updatePassword']);
 Route::get('/logout', [AdminController::class ,'flush']);
+
+Route::get('/loginAR', function (){
+    return view('auth.loginAR');
+});
+
+Route::get('/registerAR', function (){
+    return view('auth.registerAR');
+});
